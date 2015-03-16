@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Switching View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwitchingViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5z-Xt-OLm">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Switch Views" id="uUb-Oe-aKV">
+                                        <connections>
+                                            <action selector="switchViews:" destination="BYZ-38-t0r" id="GaQ-CL-Wkq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d5z-Xt-OLm" secondAttribute="bottom" id="0pn-pM-Cmf"/>
+                            <constraint firstItem="d5z-Xt-OLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4by-n0-FC5"/>
+                            <constraint firstAttribute="trailing" secondItem="d5z-Xt-OLm" secondAttribute="trailing" id="OAm-iU-93E"/>
+                            <constraint firstItem="d5z-Xt-OLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y8z-Mi-wFJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d5z-Xt-OLm" secondAttribute="bottom" id="aO6-nu-Axl"/>
+                            <constraint firstItem="d5z-Xt-OLm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="awW-YW-AZW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5z-Xt-OLm" secondAttribute="trailing" id="bRa-qz-Qlg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5z-Xt-OLm" secondAttribute="trailing" id="mNR-Cp-a9G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="BmO-1a-6fE">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="jXh-Bp-7U5" customClass="BlueViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BTN-OA-gkQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGx-7B-RKH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7fc-9d-bmR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ2-BC-odw">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueButtonPressed:" destination="jXh-Bp-7U5" eventType="touchUpInside" id="5Y7-Ym-Akw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.02960257799949062" green="0.10426586582271768" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="iQ2-BC-odw" secondAttribute="centerX" id="Ug1-vG-Ezh"/>
+                            <constraint firstAttribute="centerY" secondItem="iQ2-BC-odw" secondAttribute="centerY" id="wui-ch-OAk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lvr-31-61i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="-271"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="Te0-GE-FRa">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="R5f-op-p6j" customClass="YellowViewController" customModule="View_Switcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tOr-fE-FdS"/>
+                        <viewControllerLayoutGuide type="bottom" id="PTe-k0-GJv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzv-nx-aSX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaL-lt-0RY">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowButtonPressed:" destination="R5f-op-p6j" eventType="touchUpInside" id="457-wA-ne2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8386412552152841" blue="0.1195256050044794" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="TaL-lt-0RY" secondAttribute="centerY" id="14s-DF-Aqg"/>
+                            <constraint firstAttribute="centerX" secondItem="TaL-lt-0RY" secondAttribute="centerX" id="CFD-gY-uU4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7h-3J-PnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="451"/>
+        </scene>
+    </scenes>
+</document>
