@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let defaults = [warpDriveKey: true, warpFactorKey: 5, favoriteAlienKey: "Vulcan", rankKey: "Commadore"]
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaults)
+        
         return true
     }
 
